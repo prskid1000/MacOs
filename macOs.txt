@@ -1,0 +1,13 @@
+python macrecovery.py -b Mac-937A206F2EE63C01 -m 00000000000000000 download -> D:\Downloads\OpenCore-1.0.6-RELEASE\Utilities\macrecovery
+
+C:\"Program Files"\qemu\qemu-img.exe convert -O vmdk -o compat6 BaseSystem.dmg BaseSystem.vmdk -> D:\Downloads\OpenCore-1.0.6-RELEASE\Utilities\macrecovery\com.apple.recovery.boot
+
+C:\"Program Files"\qemu\qemu-img.exe convert -O vmdk -o compat6 opencore.iso opencore.vmdk ->D:\Downloads\oc4vm-2.0.0\vmware\intel
+
+D:\Downloads\oc4vm-2.0.0\vmware\intel -> this contains VMWare Disk copy above two file into this
+
+Change resolution inside VM:  sudo /Library/Application\ Support/VMware\ Tools/vmware-resolutionSet 1280 800
+
+./vmhide -on -> get vmhide inside oc4vm/tools folder of version 1.2
+
+https://www.youtube.com/watch?v=5Tj9U_sKWkc
